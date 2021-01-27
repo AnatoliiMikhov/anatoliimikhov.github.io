@@ -1,0 +1,22 @@
+{
+  "name": "uber",
+  "version": "1.0.0",
+  "description": "this is a site from a tutorial project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnatoliiMikhov/anatoliimikhov.github.io.git"
+  },
+  "author": "\"Anatolii Mikhov\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnatoliiMikhov/anatoliimikhov.github.io/issues"
+  },
+  "homepage": "https://github.com/AnatoliiMikhov/anatoliimikhov.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
