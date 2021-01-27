@@ -1,0 +1,59 @@
+.mobile
+	// min-height: 864px
+	background: url('../img/mobile_bg.png') center (center/cover) no-repeat
+	padding: 48px 0 80px
+	.row
+		margin-top: 32px
+	&_item
+		// width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-bottom: 19px
+		padding-top: 92px
+		position: relative
+		&_1
+			background: url('../img/mobile/mobile_1.jpg') center (center/cover) no-repeat
+		&_2
+			background: url('../img/mobile/mobile_2.jpg') center (center/cover) no-repeat
+		&_3
+			background: url('../img/mobile/mobile_3.jpg') center (center/cover) no-repeat
+		&_4
+			background: url('../img/mobile/mobile_4.jpg') center (center/cover) no-repeat
+		&_5
+			background: url('../img/mobile/mobile_5.jpg') center (center/cover) no-repeat
+		&_6
+			background: url('../img/mobile/mobile_6.jpg') center (center/cover) no-repeat
+		&_subtitle
+			font-size: 24px
+			color: $white
+			text-align: center
+			text-transform: uppercase
+			padding: 0 20px
+		&_btn
+			position: absolute
+			width: 29px
+			height: 29px
+			background: $black
+			border: none
+			border-radius: 50%
+			bottom: 35px
+			@include left_transform
+			@include flex_center
+			&:focus
+				outline: 0 !important
+			&:before,
+			&:after
+				content: ''
+				display: block
+				height: 2px
+				width: 14px
+				background: $btn_color_2
+			&:after
+				position: absolute
+				height: 14px
+				width: 2px
+				@include left_transform
+			&:hover
+				box-shadow: 0 0 5px 2px $btn_color_2
+				&:before, &:after
+					background: $warning

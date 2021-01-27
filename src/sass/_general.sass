@@ -1,0 +1,46 @@
+.label
+	width: 115px
+	width: max-content
+	margin: 0 auto
+	padding: 6px 15px
+	background: $black
+	font-size: 11px
+	color: $white
+	text-align: center
+	text-transform: uppercase
+	position: relative
+	z-index: 2
+	&_white
+		color: $black
+		background: $white
+
+.title
+	font-weight: bold
+	font-size: 38px
+	text-transform: uppercase
+	text-align: center
+	margin: 35px 0 0
+	position: relative
+	z-index: 2
+	&_white
+		color: $white
+
+.subtitle
+	font-size: 17px
+	color: #222222
+	text-align: center
+	line-height: 1rem
+	position: relative
+	z-index: 2
+	&_white
+		color: $white
+
+.xs-visible
+	display: none
+
+@media (max-width: 767.98px)
+
+	.xs-hidden
+		display: none
+	.xs-visible
+		display: block

@@ -1,0 +1,41 @@
+.require
+	padding: 65px 0 87px
+	&_block
+		margin-top: 30px
+	&_title
+		color: #1CA8C3
+		font-size: 22px
+	&_descr
+		color: #1CA8C3
+		font-weight: 300
+		font-size: 17px
+		margin-top: 1rem
+	&_list
+		list-style-type: none
+		margin-bottom: 0
+		margin-top: 20px
+		padding-left: 50px
+		li
+			position: relative
+			font-weight: 300
+			font-size: 17px
+			line-height: 28px
+			color: #222222
+			&::before
+				position: absolute
+				left: -35px
+				top: 5px
+				content: ''
+				display: block
+				width: 21px
+				height: 20px
+				background: url('../icons/conditions_icon.png') center (center/cover) no-repeat
+	.warning
+		.require_title
+			color: $warning
+			span
+				text-transform: uppercase
+		.require_list
+			li
+				&::before
+					background: url('../icons/require_icon.png') center (center/cover) no-repeat

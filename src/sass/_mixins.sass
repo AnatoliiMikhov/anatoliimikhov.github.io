@@ -1,0 +1,20 @@
+@mixin btn_common
+	display: block
+	background: linear-gradient(0deg, $btn_color_1 0%, $btn_color_2 40%,$btn_color_2 60%, $btn_color_1 100%)
+	box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.12)
+	border: none
+	border-radius: 4px
+	text-transform: uppercase
+	color: $white
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+	&:hover
+		background: linear-gradient(0deg, $btn_hover_1 0%, $btn_hover_2 100%)
+
+@mixin flex_center
+	display: flex
+	justify-content: center
+	align-items: center
+
+@mixin left_transform
+	left: 50%
+	transform: translateX(-50%)

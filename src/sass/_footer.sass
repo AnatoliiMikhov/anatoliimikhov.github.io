@@ -1,0 +1,139 @@
+/* --------------------------------- footer --------------------------------- */
+.footer
+	position: relative
+	&_wrapper
+		display: flex
+		justify-content: space-between
+		min-height: 150px
+		padding: 40px 25px
+		> div
+			width: 33%
+	&_social
+		display: flex
+		&_item
+			width: 35px
+			height: 35px
+			margin-right: 6px
+			background: #070716
+			border-radius: 50%
+			@include flex_center
+			i
+				color: $white
+				font-size: 20px
+	&_links
+		&_main
+			display: flex
+			justify-content: space-around
+			a
+				font-weight: 300
+				font-size: 15px
+				line-height: 1
+				text-transform: uppercase
+				color: #070716
+		&_sub
+			display: flex
+			justify-content: space-between
+			margin-top: 14px
+			a
+				font-weight: 300
+				font-size: 11px
+				line-height: 1
+				text-transform: uppercase
+				color: #999999
+		&_lang
+			display: block
+			margin: 0 auto
+			color: #1FBAD6
+			font-size: 11px
+			font-weight: 400
+			margin-top: 16px
+			text-transform: uppercase
+			text-align: center
+
+	&_store
+		display: flex
+		justify-content: flex-end
+		a
+			display: block
+			margin-left: 10px
+			&:first-child
+				margin-left: 0
+			img
+				width: 100%
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: 11px
+		height: 4px
+		width: 301px
+		background: #1FBAD6
+		@include left_transform
+
+@media (max-width: 1199.98px)
+	.footer
+		&_links
+			&_sub
+				a
+					font-size: 10px
+		&_store
+			flex-direction: column
+			align-items: center
+			a
+				margin-left: 0
+				margin-bottom: 6px
+
+@media (max-width: 991.98px)
+	.footer
+		&_wrapper
+			flex-direction: column
+			> div
+				width: 100%
+				&:last-child
+					width: 50%
+		&_links
+			order: 1
+			&_sub
+				width: 76%
+				margin: 0 auto
+				margin-top: 14px
+				a
+					font-size: 11px
+		&_social
+			justify-content: center
+			order: 2
+			margin-top: 16px
+		&_store
+			flex-direction: row
+			justify-content: space-between
+			order: 3
+			margin: 16px auto 0
+
+@media (max-width: 767.98px)
+	.footer
+		&_wrapper
+			> div:last-child
+				width: 60%
+
+@media (max-width: 575.98px)
+	.footer
+		&_wrapper
+			padding: 40px 10px
+			&>div:last-child
+				width: 100%
+		&_links
+			&_main
+				a
+					font-size: 14px
+			&_sub
+				flex-wrap: wrap
+				a
+					line-height: 2
+					margin-right: 10px
+			&_lang
+				margin-top: 8px
+		&_social
+			margin-top: 12px
+		&:before
+			top: 15px
+			width: 255px
